@@ -1,0 +1,29 @@
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++17
+
+# List all .cpp files here (if your .h code is split into these sources)
+SRCS = main.cpp \
+       server.cpp \
+       request.cpp \
+       load_balancer.cpp
+
+# Build object list by replacing .cpp with .o
+OBJS = $(SRCS:.cpp=.o)
+
+# Name of the final executable
+TARGET = myprogram
+
+all: $(TARGET)
+
+# Link all object files into the final binary
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+
+# Compile each .cpp file into a .o
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $<
+
+# Clean up build artifacts
+clean:
+	rm -f *.o
+	rm -f $(TARGET)

@@ -1,0 +1,21 @@
+CC = g++
+CFLAGS = -std=c++17
+
+TARGET = loadbalancer
+
+SRCS = main.cpp server.cpp request.cpp load-balancer.cpp
+OBJS = $(SRCS:.cpp=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f *.o $(TARGET)
+
+run: $(TARGET)
+	
