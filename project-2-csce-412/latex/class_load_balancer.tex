@@ -1,0 +1,81 @@
+\doxysection{Load\+Balancer Class Reference}
+\hypertarget{class_load_balancer}{}\label{class_load_balancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+Manages a collection of servers and a queue of requests.  
+
+
+
+
+{\ttfamily \#include $<$load-\/balancer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_load_balancer_a041494ece67d255b6e1c66b0354d37ee}{Load\+Balancer}} (size\+\_\+t num\+Servers, size\+\_\+t time\+To\+Run)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_load_balancer}{Load\+Balancer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_balancer_af4f08bc6572174a17d2b760ecf6a1e1c}{initialize\+Queue}} (size\+\_\+t num\+Servers)
+\begin{DoxyCompactList}\small\item\em Initializes the request queue with a predefined number of requests. \end{DoxyCompactList}\item 
+\Hypertarget{class_load_balancer_a528909054cb20964cba1fb35ceb9003f}\label{class_load_balancer_a528909054cb20964cba1fb35ceb9003f} 
+void {\bfseries run} ()
+\begin{DoxyCompactList}\small\item\em Runs the load balancer simulation. \end{DoxyCompactList}\item 
+\Hypertarget{class_load_balancer_ab70e54df78243aba02abed9de0f265bd}\label{class_load_balancer_ab70e54df78243aba02abed9de0f265bd} 
+void {\bfseries print\+Results} () const
+\begin{DoxyCompactList}\small\item\em Prints the results of the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of servers and a queue of requests. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_load_balancer_a041494ece67d255b6e1c66b0354d37ee}\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{LoadBalancer()}{LoadBalancer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a041494ece67d255b6e1c66b0354d37ee} 
+Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+Servers}{, }\item[{size\+\_\+t}]{time\+To\+Run}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_load_balancer}{Load\+Balancer}. 
+
+Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a given number of servers and runtime.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Servers} & Number of servers to create. \\
+\hline
+{\em time\+To\+Run} & Total simulation time.\\
+\hline
+{\em num\+Servers} & Number of servers to manage. \\
+\hline
+{\em time\+To\+Run} & Maximum runtime for the simulation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_load_balancer_af4f08bc6572174a17d2b760ecf6a1e1c}\index{LoadBalancer@{LoadBalancer}!initializeQueue@{initializeQueue}}
+\index{initializeQueue@{initializeQueue}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{initializeQueue()}{initializeQueue()}}
+{\footnotesize\ttfamily \label{class_load_balancer_af4f08bc6572174a17d2b760ecf6a1e1c} 
+void Load\+Balancer\+::initialize\+Queue (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+Servers}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the request queue with a predefined number of requests. 
+
+Populates the request queue with an initial set of requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Servers} & Number of servers in the load balancer.\\
+\hline
+{\em num\+Servers} & Number of servers in the system. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{load-balancer_8h}{load-\/balancer.\+h}}\item 
+\mbox{\hyperlink{load-balancer_8cpp}{load-\/balancer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,124 @@
+\doxysection{Request Class Reference}
+\hypertarget{class_request}{}\label{class_request}\index{Request@{Request}}
+
+
+Represents a network request with associated properties.  
+
+
+
+
+{\ttfamily \#include $<$request.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_request_a5fdeffb78f750c0d580bffbd9db69453}{Request}} (const std\+::string \&in, const std\+::string \&out, size\+\_\+t time, char type)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \doxylink{class_request}{Request}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_request_afaf8d8928de7ffff8a3767589489bd33}{Request}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_request}{Request}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_request_a14281b39f1957ba33d047a8ba5522501}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the duration of the request. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_request_a543cfe98d09b712ffcfe95f3322fa5ba}{get\+Job\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the job type of the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_request_aa1860d3da3a9aaf27a02140dfe99bf9a}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_request}{Request}} \&r)
+\begin{DoxyCompactList}\small\item\em Overloads the stream operator for printing requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a network request with associated properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_request_a5fdeffb78f750c0d580bffbd9db69453}\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_request_a5fdeffb78f750c0d580bffbd9db69453} 
+Request\+::\+Request (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in}{, }\item[{const std\+::string \&}]{out}{, }\item[{size\+\_\+t}]{time}{, }\item[{char}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for \doxylink{class_request}{Request}. 
+
+Constructs a \doxylink{class_request}{Request} with given parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Source IP address. \\
+\hline
+{\em out} & Destination IP address. \\
+\hline
+{\em time} & Duration of the request. \\
+\hline
+{\em type} & Type of the job. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_request_afaf8d8928de7ffff8a3767589489bd33}\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_request_afaf8d8928de7ffff8a3767589489bd33} 
+Request\+::\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_request}{Request}. 
+
+Constructs a default \doxylink{class_request}{Request} object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_request_a14281b39f1957ba33d047a8ba5522501}\index{Request@{Request}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily \label{class_request_a14281b39f1957ba33d047a8ba5522501} 
+size\+\_\+t Request\+::get\+Duration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the duration of the request. 
+
+\begin{DoxyReturn}{Returns}
+Duration of the request. 
+\end{DoxyReturn}
+\Hypertarget{class_request_a543cfe98d09b712ffcfe95f3322fa5ba}\index{Request@{Request}!getJobType@{getJobType}}
+\index{getJobType@{getJobType}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getJobType()}{getJobType()}}
+{\footnotesize\ttfamily \label{class_request_a543cfe98d09b712ffcfe95f3322fa5ba} 
+char Request\+::get\+Job\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the job type of the request. 
+
+\begin{DoxyReturn}{Returns}
+Job type. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_request_aa1860d3da3a9aaf27a02140dfe99bf9a}\index{Request@{Request}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_request_aa1860d3da3a9aaf27a02140dfe99bf9a} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_request}{Request}} \&}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the stream operator for printing requests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em r} & \doxylink{class_request}{Request} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output stream reference. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{request_8h}{request.\+h}}\item 
+\mbox{\hyperlink{request_8cpp}{request.\+cpp}}\end{DoxyCompactItemize}

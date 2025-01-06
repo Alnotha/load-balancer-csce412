@@ -1,0 +1,129 @@
+\doxysection{Server Class Reference}
+\hypertarget{class_server}{}\label{class_server}\index{Server@{Server}}
+
+
+Represents a server that processes requests.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_server_a7021767d27bf1dbebb17782f441fb167}{Server}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_server}{Server} with a given name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_server_aadcc7f493017ac0517fa7b08837d0123}{is\+Busy}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the server is busy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_a0932aef94e14e2c19b675774fd8c91c6}{set\+Request}} (const \mbox{\hyperlink{class_request}{Request}} \&r)
+\begin{DoxyCompactList}\small\item\em Assigns a new request to the server. \end{DoxyCompactList}\item 
+\Hypertarget{class_server_af246dfaef78c67a054c3ebb591a4647b}\label{class_server_af246dfaef78c67a054c3ebb591a4647b} 
+void {\bfseries handle\+Request} ()
+\begin{DoxyCompactList}\small\item\em Processes the current request for one time step. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_server_adfbbc2a7f317f6ca0db5a31531ab66fd}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_server_aa519298896c7089f206d58704d401885}{has\+Request\+Finished}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the server has finished processing the current request. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_request}{Request}} \& \mbox{\hyperlink{class_server_ae65f34b009fba897a5239c988be1cfff}{get\+Current\+Request}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current request being processed. \end{DoxyCompactList}\item 
+\Hypertarget{class_server_ab8e9ccf9f1a5be8679ba21ce16a8a922}\label{class_server_ab8e9ccf9f1a5be8679ba21ce16a8a922} 
+void {\bfseries clear\+Current\+Request} ()
+\begin{DoxyCompactList}\small\item\em Clears the current request after completion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a server that processes requests. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_server_a7021767d27bf1dbebb17782f441fb167}\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily \label{class_server_a7021767d27bf1dbebb17782f441fb167} 
+Server\+::\+Server (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_server}{Server} with a given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the server. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_server_ae65f34b009fba897a5239c988be1cfff}\index{Server@{Server}!getCurrentRequest@{getCurrentRequest}}
+\index{getCurrentRequest@{getCurrentRequest}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getCurrentRequest()}{getCurrentRequest()}}
+{\footnotesize\ttfamily \label{class_server_ae65f34b009fba897a5239c988be1cfff} 
+const \mbox{\hyperlink{class_request}{Request}} \& Server\+::get\+Current\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current request being processed. 
+
+\begin{DoxyReturn}{Returns}
+Current request. 
+\end{DoxyReturn}
+\Hypertarget{class_server_adfbbc2a7f317f6ca0db5a31531ab66fd}\index{Server@{Server}!getName@{getName}}
+\index{getName@{getName}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_server_adfbbc2a7f317f6ca0db5a31531ab66fd} 
+const std\+::string \& Server\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the name of the server. 
+
+\begin{DoxyReturn}{Returns}
+Name of the server. 
+\end{DoxyReturn}
+\Hypertarget{class_server_aa519298896c7089f206d58704d401885}\index{Server@{Server}!hasRequestFinished@{hasRequestFinished}}
+\index{hasRequestFinished@{hasRequestFinished}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{hasRequestFinished()}{hasRequestFinished()}}
+{\footnotesize\ttfamily \label{class_server_aa519298896c7089f206d58704d401885} 
+bool Server\+::has\+Request\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the server has finished processing the current request. 
+
+\begin{DoxyReturn}{Returns}
+True if the request is finished, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_server_aadcc7f493017ac0517fa7b08837d0123}\index{Server@{Server}!isBusy@{isBusy}}
+\index{isBusy@{isBusy}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{isBusy()}{isBusy()}}
+{\footnotesize\ttfamily \label{class_server_aadcc7f493017ac0517fa7b08837d0123} 
+bool Server\+::is\+Busy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the server is busy. 
+
+\begin{DoxyReturn}{Returns}
+True if the server is busy, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_server_a0932aef94e14e2c19b675774fd8c91c6}\index{Server@{Server}!setRequest@{setRequest}}
+\index{setRequest@{setRequest}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{setRequest()}{setRequest()}}
+{\footnotesize\ttfamily \label{class_server_a0932aef94e14e2c19b675774fd8c91c6} 
+void Server\+::set\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_request}{Request}} \&}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Assigns a new request to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \doxylink{class_request}{Request} to process. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+\mbox{\hyperlink{server_8cpp}{server.\+cpp}}\end{DoxyCompactItemize}
