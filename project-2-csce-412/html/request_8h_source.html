@@ -106,41 +106,41 @@ $(function(){initNavTree('request_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="request_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef REQUEST_H</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define REQUEST_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_request.html">   17</a></span><span class="keyword">class </span><a class="code hl_function" href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string ipIn;  </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string ipOut; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">size_t</span> duration;   </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">char</span> jobType;      </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request</a>(<span class="keyword">const</span> std::string &amp;in, <span class="keyword">const</span> std::string &amp;out,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">size_t</span> time, <span class="keywordtype">char</span> type);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_request.html#a14281b39f1957ba33d047a8ba5522501">getDuration</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">char</span> <a class="code hl_function" href="class_request.html#a543cfe98d09b712ffcfe95f3322fa5ba">getJobType</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="class_request.html#aa1860d3da3a9aaf27a02140dfe99bf9a">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code hl_function" href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request</a> &amp;r);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef REQUEST_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define REQUEST_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_request.html">   16</a></span><span class="keyword">class </span><a class="code hl_function" href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::string ipIn;  </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string ipOut; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">size_t</span> duration;   </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">char</span> jobType;      </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request</a>(<span class="keyword">const</span> std::string &amp;in, <span class="keyword">const</span> std::string &amp;out,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">size_t</span> time, <span class="keywordtype">char</span> type);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_request.html#a14281b39f1957ba33d047a8ba5522501">getDuration</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">char</span> <a class="code hl_function" href="class_request.html#a543cfe98d09b712ffcfe95f3322fa5ba">getJobType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="class_request.html#aa1860d3da3a9aaf27a02140dfe99bf9a">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code hl_function" href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request</a> &amp;r);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_request_html_a14281b39f1957ba33d047a8ba5522501"><div class="ttname"><a href="class_request.html#a14281b39f1957ba33d047a8ba5522501">Request::getDuration</a></div><div class="ttdeci">size_t getDuration() const</div><div class="ttdoc">Retrieves the duration of the request.</div><div class="ttdef"><b>Definition</b> request.cpp:28</div></div>
-<div class="ttc" id="aclass_request_html_a543cfe98d09b712ffcfe95f3322fa5ba"><div class="ttname"><a href="class_request.html#a543cfe98d09b712ffcfe95f3322fa5ba">Request::getJobType</a></div><div class="ttdeci">char getJobType() const</div><div class="ttdoc">Retrieves the job type of the request.</div><div class="ttdef"><b>Definition</b> request.cpp:36</div></div>
-<div class="ttc" id="aclass_request_html_a5fdeffb78f750c0d580bffbd9db69453"><div class="ttname"><a href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request::Request</a></div><div class="ttdeci">Request(const std::string &amp;in, const std::string &amp;out, size_t time, char type)</div><div class="ttdoc">Parameterized constructor for Request.</div><div class="ttdef"><b>Definition</b> request.cpp:16</div></div>
-<div class="ttc" id="aclass_request_html_aa1860d3da3a9aaf27a02140dfe99bf9a"><div class="ttname"><a href="class_request.html#aa1860d3da3a9aaf27a02140dfe99bf9a">Request::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Request &amp;r)</div><div class="ttdoc">Overloads the stream operator for printing requests.</div><div class="ttdef"><b>Definition</b> request.cpp:46</div></div>
-<div class="ttc" id="aclass_request_html_afaf8d8928de7ffff8a3767589489bd33"><div class="ttname"><a href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request::Request</a></div><div class="ttdeci">Request()</div><div class="ttdoc">Default constructor for Request.</div><div class="ttdef"><b>Definition</b> request.cpp:22</div></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_request_html_a14281b39f1957ba33d047a8ba5522501"><div class="ttname"><a href="class_request.html#a14281b39f1957ba33d047a8ba5522501">Request::getDuration</a></div><div class="ttdeci">size_t getDuration() const</div><div class="ttdoc">Retrieves the duration of the request.</div><div class="ttdef"><b>Definition</b> request.cpp:27</div></div>
+<div class="ttc" id="aclass_request_html_a543cfe98d09b712ffcfe95f3322fa5ba"><div class="ttname"><a href="class_request.html#a543cfe98d09b712ffcfe95f3322fa5ba">Request::getJobType</a></div><div class="ttdeci">char getJobType() const</div><div class="ttdoc">Retrieves the job type of the request.</div><div class="ttdef"><b>Definition</b> request.cpp:35</div></div>
+<div class="ttc" id="aclass_request_html_a5fdeffb78f750c0d580bffbd9db69453"><div class="ttname"><a href="class_request.html#a5fdeffb78f750c0d580bffbd9db69453">Request::Request</a></div><div class="ttdeci">Request(const std::string &amp;in, const std::string &amp;out, size_t time, char type)</div><div class="ttdoc">Parameterized constructor for Request.</div><div class="ttdef"><b>Definition</b> request.cpp:15</div></div>
+<div class="ttc" id="aclass_request_html_aa1860d3da3a9aaf27a02140dfe99bf9a"><div class="ttname"><a href="class_request.html#aa1860d3da3a9aaf27a02140dfe99bf9a">Request::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Request &amp;r)</div><div class="ttdoc">Overloads the stream operator for printing requests.</div><div class="ttdef"><b>Definition</b> request.cpp:45</div></div>
+<div class="ttc" id="aclass_request_html_afaf8d8928de7ffff8a3767589489bd33"><div class="ttname"><a href="class_request.html#afaf8d8928de7ffff8a3767589489bd33">Request::Request</a></div><div class="ttdeci">Request()</div><div class="ttdoc">Default constructor for Request.</div><div class="ttdef"><b>Definition</b> request.cpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

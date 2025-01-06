@@ -16,11 +16,9 @@ Manages a collection of servers and a queue of requests.
 \begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_load_balancer}{Load\+Balancer}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_load_balancer_af4f08bc6572174a17d2b760ecf6a1e1c}{initialize\+Queue}} (size\+\_\+t num\+Servers)
 \begin{DoxyCompactList}\small\item\em Initializes the request queue with a predefined number of requests. \end{DoxyCompactList}\item 
-\Hypertarget{class_load_balancer_a528909054cb20964cba1fb35ceb9003f}\label{class_load_balancer_a528909054cb20964cba1fb35ceb9003f} 
-void {\bfseries run} ()
+void \mbox{\hyperlink{class_load_balancer_a528909054cb20964cba1fb35ceb9003f}{run}} ()
 \begin{DoxyCompactList}\small\item\em Runs the load balancer simulation. \end{DoxyCompactList}\item 
-\Hypertarget{class_load_balancer_ab70e54df78243aba02abed9de0f265bd}\label{class_load_balancer_ab70e54df78243aba02abed9de0f265bd} 
-void {\bfseries print\+Results} () const
+void \mbox{\hyperlink{class_load_balancer_ab70e54df78243aba02abed9de0f265bd}{print\+Results}} () const
 \begin{DoxyCompactList}\small\item\em Prints the results of the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -38,7 +36,7 @@ Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]
 
 Constructor for \doxylink{class_load_balancer}{Load\+Balancer}. 
 
-Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a given number of servers and runtime.
+Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a specified number of servers and runtime.
 
 
 \begin{DoxyParams}{Parameters}
@@ -46,9 +44,14 @@ Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a given number 
 \hline
 {\em time\+To\+Run} & Total simulation time.\\
 \hline
-{\em num\+Servers} & Number of servers to manage. \\
+\end{DoxyParams}
+Initializes servers, seeds the random number generator, and fills the initial request queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Servers} & The number of servers in the system. \\
 \hline
-{\em time\+To\+Run} & Maximum runtime for the simulation. \\
+{\em time\+To\+Run} & The total simulation runtime (in ticks). \\
 \hline
 \end{DoxyParams}
 
@@ -64,16 +67,43 @@ void Load\+Balancer\+::initialize\+Queue (\begin{DoxyParamCaption}\item[{size\+\
 
 Initializes the request queue with a predefined number of requests. 
 
-Populates the request queue with an initial set of requests.
-
 
 \begin{DoxyParams}{Parameters}
 {\em num\+Servers} & Number of servers in the load balancer.\\
 \hline
-{\em num\+Servers} & Number of servers in the system. \\
+\end{DoxyParams}
+Generates (num\+Servers \texorpdfstring{$\ast$}{*} 20) requests with random IP addresses, durations, and job types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Servers} & The number of servers in the system. \\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_load_balancer_ab70e54df78243aba02abed9de0f265bd}\index{LoadBalancer@{LoadBalancer}!printResults@{printResults}}
+\index{printResults@{printResults}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{printResults()}{printResults()}}
+{\footnotesize\ttfamily \label{class_load_balancer_ab70e54df78243aba02abed9de0f265bd} 
+void Load\+Balancer\+::print\+Results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
+
+
+Prints the results of the simulation. 
+
+Prints the final results of the simulation.
+
+Outputs the total simulation time and the number of remaining requests in the queue. \Hypertarget{class_load_balancer_a528909054cb20964cba1fb35ceb9003f}\index{LoadBalancer@{LoadBalancer}!run@{run}}
+\index{run@{run}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a528909054cb20964cba1fb35ceb9003f} 
+void Load\+Balancer\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Runs the load balancer simulation. 
+
+Runs the main simulation loop.
+
+Processes requests by updating servers, handling completed requests, and assigning new ones. The simulation ends when either the runtime limit is reached or all requests are processed. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

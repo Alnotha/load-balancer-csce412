@@ -106,51 +106,51 @@ $(function(){initNavTree('server_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="server_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef SERVER_H</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define SERVER_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="request_8h.html">request.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_server.html">   18</a></span><span class="keyword">class </span><a class="code hl_function" href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string serverName; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_request.html">Request</a> currentReq;     </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> busy;              </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> timeSpent;       </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server</a>(<span class="keyword">const</span> std::string &amp;name);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_server.html#aadcc7f493017ac0517fa7b08837d0123">isBusy</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#a0932aef94e14e2c19b675774fd8c91c6">setRequest</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_request.html">Request</a> &amp;r);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#af246dfaef78c67a054c3ebb591a4647b">handleRequest</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="class_server.html#adfbbc2a7f317f6ca0db5a31531ab66fd">getName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_server.html#aa519298896c7089f206d58704d401885">hasRequestFinished</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_request.html">Request</a>&amp; <a class="code hl_function" href="class_server.html#ae65f34b009fba897a5239c988be1cfff">getCurrentRequest</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#ab8e9ccf9f1a5be8679ba21ce16a8a922">clearCurrentRequest</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef SERVER_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define SERVER_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="request_8h.html">request.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_server.html">   17</a></span><span class="keyword">class </span><a class="code hl_function" href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string serverName; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_request.html">Request</a> currentReq;     </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">bool</span> busy;              </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> timeSpent;       </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server</a>(<span class="keyword">const</span> std::string &amp;name);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_server.html#aadcc7f493017ac0517fa7b08837d0123">isBusy</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#a0932aef94e14e2c19b675774fd8c91c6">setRequest</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_request.html">Request</a> &amp;r);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#af246dfaef78c67a054c3ebb591a4647b">handleRequest</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="class_server.html#adfbbc2a7f317f6ca0db5a31531ab66fd">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_server.html#aa519298896c7089f206d58704d401885">hasRequestFinished</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_request.html">Request</a>&amp; <a class="code hl_function" href="class_server.html#ae65f34b009fba897a5239c988be1cfff">getCurrentRequest</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_server.html#ab8e9ccf9f1a5be8679ba21ce16a8a922">clearCurrentRequest</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_request_html"><div class="ttname"><a href="class_request.html">Request</a></div><div class="ttdoc">Represents a network request with associated properties.</div><div class="ttdef"><b>Definition</b> request.h:17</div></div>
-<div class="ttc" id="aclass_server_html_a0932aef94e14e2c19b675774fd8c91c6"><div class="ttname"><a href="class_server.html#a0932aef94e14e2c19b675774fd8c91c6">Server::setRequest</a></div><div class="ttdeci">void setRequest(const Request &amp;r)</div><div class="ttdoc">Assigns a new request to the server.</div><div class="ttdef"><b>Definition</b> server.cpp:28</div></div>
-<div class="ttc" id="aclass_server_html_a7021767d27bf1dbebb17782f441fb167"><div class="ttname"><a href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server::Server</a></div><div class="ttdeci">Server(const std::string &amp;name)</div><div class="ttdoc">Constructs a Server with a given name.</div><div class="ttdef"><b>Definition</b> server.cpp:13</div></div>
-<div class="ttc" id="aclass_server_html_aa519298896c7089f206d58704d401885"><div class="ttname"><a href="class_server.html#aa519298896c7089f206d58704d401885">Server::hasRequestFinished</a></div><div class="ttdeci">bool hasRequestFinished() const</div><div class="ttdoc">Checks if the server has finished processing the current request.</div><div class="ttdef"><b>Definition</b> server.cpp:50</div></div>
-<div class="ttc" id="aclass_server_html_aadcc7f493017ac0517fa7b08837d0123"><div class="ttname"><a href="class_server.html#aadcc7f493017ac0517fa7b08837d0123">Server::isBusy</a></div><div class="ttdeci">bool isBusy() const</div><div class="ttdoc">Checks if the server is busy.</div><div class="ttdef"><b>Definition</b> server.cpp:20</div></div>
-<div class="ttc" id="aclass_server_html_ab8e9ccf9f1a5be8679ba21ce16a8a922"><div class="ttname"><a href="class_server.html#ab8e9ccf9f1a5be8679ba21ce16a8a922">Server::clearCurrentRequest</a></div><div class="ttdeci">void clearCurrentRequest()</div><div class="ttdoc">Clears the current request after completion.</div><div class="ttdef"><b>Definition</b> server.cpp:57</div></div>
-<div class="ttc" id="aclass_server_html_adfbbc2a7f317f6ca0db5a31531ab66fd"><div class="ttname"><a href="class_server.html#adfbbc2a7f317f6ca0db5a31531ab66fd">Server::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdoc">Retrieves the name of the server.</div><div class="ttdef"><b>Definition</b> server.cpp:74</div></div>
-<div class="ttc" id="aclass_server_html_ae65f34b009fba897a5239c988be1cfff"><div class="ttname"><a href="class_server.html#ae65f34b009fba897a5239c988be1cfff">Server::getCurrentRequest</a></div><div class="ttdeci">const Request &amp; getCurrentRequest() const</div><div class="ttdoc">Retrieves the current request being processed.</div><div class="ttdef"><b>Definition</b> server.cpp:66</div></div>
-<div class="ttc" id="aclass_server_html_af246dfaef78c67a054c3ebb591a4647b"><div class="ttname"><a href="class_server.html#af246dfaef78c67a054c3ebb591a4647b">Server::handleRequest</a></div><div class="ttdeci">void handleRequest()</div><div class="ttdoc">Processes the current request for one time step.</div><div class="ttdef"><b>Definition</b> server.cpp:37</div></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_request_html"><div class="ttname"><a href="class_request.html">Request</a></div><div class="ttdoc">Represents a network request with associated properties.</div><div class="ttdef"><b>Definition</b> request.h:16</div></div>
+<div class="ttc" id="aclass_server_html_a0932aef94e14e2c19b675774fd8c91c6"><div class="ttname"><a href="class_server.html#a0932aef94e14e2c19b675774fd8c91c6">Server::setRequest</a></div><div class="ttdeci">void setRequest(const Request &amp;r)</div><div class="ttdoc">Assigns a new request to the server.</div><div class="ttdef"><b>Definition</b> server.cpp:27</div></div>
+<div class="ttc" id="aclass_server_html_a7021767d27bf1dbebb17782f441fb167"><div class="ttname"><a href="class_server.html#a7021767d27bf1dbebb17782f441fb167">Server::Server</a></div><div class="ttdeci">Server(const std::string &amp;name)</div><div class="ttdoc">Constructs a Server with a given name.</div><div class="ttdef"><b>Definition</b> server.cpp:12</div></div>
+<div class="ttc" id="aclass_server_html_aa519298896c7089f206d58704d401885"><div class="ttname"><a href="class_server.html#aa519298896c7089f206d58704d401885">Server::hasRequestFinished</a></div><div class="ttdeci">bool hasRequestFinished() const</div><div class="ttdoc">Checks if the server has finished processing the current request.</div><div class="ttdef"><b>Definition</b> server.cpp:49</div></div>
+<div class="ttc" id="aclass_server_html_aadcc7f493017ac0517fa7b08837d0123"><div class="ttname"><a href="class_server.html#aadcc7f493017ac0517fa7b08837d0123">Server::isBusy</a></div><div class="ttdeci">bool isBusy() const</div><div class="ttdoc">Checks if the server is busy.</div><div class="ttdef"><b>Definition</b> server.cpp:19</div></div>
+<div class="ttc" id="aclass_server_html_ab8e9ccf9f1a5be8679ba21ce16a8a922"><div class="ttname"><a href="class_server.html#ab8e9ccf9f1a5be8679ba21ce16a8a922">Server::clearCurrentRequest</a></div><div class="ttdeci">void clearCurrentRequest()</div><div class="ttdoc">Clears the current request after completion.</div><div class="ttdef"><b>Definition</b> server.cpp:56</div></div>
+<div class="ttc" id="aclass_server_html_adfbbc2a7f317f6ca0db5a31531ab66fd"><div class="ttname"><a href="class_server.html#adfbbc2a7f317f6ca0db5a31531ab66fd">Server::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdoc">Retrieves the name of the server.</div><div class="ttdef"><b>Definition</b> server.cpp:73</div></div>
+<div class="ttc" id="aclass_server_html_ae65f34b009fba897a5239c988be1cfff"><div class="ttname"><a href="class_server.html#ae65f34b009fba897a5239c988be1cfff">Server::getCurrentRequest</a></div><div class="ttdeci">const Request &amp; getCurrentRequest() const</div><div class="ttdoc">Retrieves the current request being processed.</div><div class="ttdef"><b>Definition</b> server.cpp:65</div></div>
+<div class="ttc" id="aclass_server_html_af246dfaef78c67a054c3ebb591a4647b"><div class="ttname"><a href="class_server.html#af246dfaef78c67a054c3ebb591a4647b">Server::handleRequest</a></div><div class="ttdeci">void handleRequest()</div><div class="ttdoc">Processes the current request for one time step.</div><div class="ttdef"><b>Definition</b> server.cpp:36</div></div>
 <div class="ttc" id="arequest_8h_html"><div class="ttname"><a href="request_8h.html">request.h</a></div><div class="ttdoc">Header file for the Request class.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
